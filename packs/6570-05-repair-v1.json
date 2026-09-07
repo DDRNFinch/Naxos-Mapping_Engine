@@ -13,46 +13,13 @@
       "maxSubcategoriesPerCategory": 5,
       "maxTasksPerSubcategory": 5
     },
-    "mandatoryUnits": [
-      "102",
-      "234",
-      "235",
-      "300",
-      "303",
-      "313",
-      "502",
-      "701"
-    ],
+    "mandatoryUnits": ["102", "234", "235", "300", "303", "313", "502", "701"],
     "selectedOptionalUnit": "690",
     "optionalUnits": [
-      {
-        "id": "238",
-        "route": "thin",
-        "title": "Erecting thin joint masonry structures",
-        "status": "mapped-test",
-        "atomicTargetCount": 116
-      },
-      {
-        "id": "690",
-        "route": "repair",
-        "title": "Repairing and maintaining masonry structures",
-        "status": "mapped-test",
-        "atomicTargetCount": 123
-      },
-      {
-        "id": "828",
-        "route": "specialist",
-        "title": "Installing and forming specialist masonry elements",
-        "status": "mapped-test",
-        "atomicTargetCount": 124
-      },
-      {
-        "id": "837",
-        "route": "drainage",
-        "title": "Installing drainage",
-        "status": "mapped-test",
-        "atomicTargetCount": 110
-      }
+      {"id":"238","route":"thin","title":"Erecting thin joint masonry structures","status":"mapped-test","atomicTargetCount":116},
+      {"id":"690","route":"repair","title":"Repairing and maintaining masonry structures","status":"mapped-test","atomicTargetCount":123},
+      {"id":"828","route":"specialist","title":"Installing and forming specialist masonry elements","status":"mapped-test","atomicTargetCount":124},
+      {"id":"837","route":"drainage","title":"Installing drainage","status":"mapped-test","atomicTargetCount":110}
     ],
     "glh": 847,
     "tqt": 1470
@@ -60,21 +27,37 @@
   "route": {
     "id": "repair",
     "optionalUnit": "690",
-    "activeUnits": [
-      "102",
-      "234",
-      "235",
-      "300",
-      "303",
-      "313",
-      "502",
-      "701",
-      "690"
-    ],
+    "activeUnits": ["102", "234", "235", "300", "303", "313", "502", "701", "690"],
     "parentAcCount": 239,
     "atomicTargetCount": 779,
     "taskTypeCount": 125,
     "wordingAuditStatus": "pending-final-wording-audit"
+  },
+  "completionRules": {
+    "234.7.3": {
+      "type": "minimum-options",
+      "required": 1,
+      "options": ["234.7.3.a", "234.7.3.b", "234.7.3.c", "234.7.3.d"],
+      "statement": "Complete at least 1 of the 4 listed structures."
+    },
+    "313.7.3": {
+      "type": "minimum-options",
+      "required": 3,
+      "options": ["313.7.3.a", "313.7.3.b", "313.7.3.c", "313.7.3.d", "313.7.3.e", "313.7.3.f", "313.7.3.g"],
+      "statement": "Complete at least 3 of the 7 listed architectural or decorative masonry features."
+    },
+    "690.7.3": {
+      "type": "minimum-options",
+      "required": 3,
+      "options": ["690.7.3.a", "690.7.3.b", "690.7.3.c", "690.7.3.d", "690.7.3.e", "690.7.3.f"],
+      "statement": "Complete at least 3 of the 6 listed repair and maintenance activities."
+    },
+    "701.7.3": {
+      "type": "minimum-options",
+      "required": 4,
+      "options": ["701.7.3.a", "701.7.3.b", "701.7.3.c", "701.7.3.d", "701.7.3.e", "701.7.3.f", "701.7.3.g"],
+      "statement": "Complete at least 4 of the 7 listed setting-out lines."
+    }
   },
   "validation": {
     "expectedCategoryCount": 5,
