@@ -13,16 +13,7 @@
       "maxSubcategoriesPerCategory": 5,
       "maxTasksPerSubcategory": 5
     },
-    "mandatoryUnits": [
-      "102",
-      "234",
-      "235",
-      "300",
-      "303",
-      "313",
-      "502",
-      "701"
-    ],
+    "mandatoryUnits": ["102", "234", "235", "300", "303", "313", "502", "701"],
     "selectedOptionalUnit": "828",
     "glh": 847,
     "tqt": 1470
@@ -30,21 +21,39 @@
   "route": {
     "id": "specialist",
     "optionalUnit": "828",
-    "activeUnits": [
-      "102",
-      "234",
-      "235",
-      "300",
-      "303",
-      "313",
-      "502",
-      "701",
-      "828"
-    ],
+    "activeUnits": ["102", "234", "235", "300", "303", "313", "502", "701", "828"],
     "parentAcCount": 239,
     "atomicTargetCount": 780,
     "taskTypeCount": 125,
     "wordingAuditStatus": "pending-final-wording-audit"
+  },
+  "completionRules": {
+    "234.7.3": {
+      "type": "minimum-options",
+      "required": 1,
+      "options": ["234.7.3.a", "234.7.3.b", "234.7.3.c", "234.7.3.d"],
+      "statement": "Complete at least 1 of the 4 listed structures."
+    },
+    "313.7.3": {
+      "type": "minimum-options",
+      "required": 3,
+      "options": ["313.7.3.a", "313.7.3.b", "313.7.3.c", "313.7.3.d", "313.7.3.e", "313.7.3.f", "313.7.3.g"],
+      "statement": "Complete at least 3 of the 7 listed architectural or decorative masonry features."
+    },
+    "701.7.3": {
+      "type": "minimum-options",
+      "required": 4,
+      "options": ["701.7.3.a", "701.7.3.b", "701.7.3.c", "701.7.3.d", "701.7.3.e", "701.7.3.f", "701.7.3.g"],
+      "statement": "Complete at least 4 of the 7 listed setting-out lines."
+    },
+    "828.7.3": {
+      "type": "required-tasks-plus-minimum-options",
+      "required": 2,
+      "options": ["828.7.3.a", "828.7.3.b", "828.7.3.c", "828.7.3.d", "828.7.3.e"],
+      "requiredTaskLabels": ["Install fire barriers or fire breaks", "Install a masonry support system"],
+      "excludeRequiredTaskPathsFromOptions": true,
+      "statement": "Complete fire barriers/breaks and support angles, plus at least 2 of the 5 listed specialist masonry support elements."
+    }
   },
   "validation": {
     "expectedCategoryCount": 5,
