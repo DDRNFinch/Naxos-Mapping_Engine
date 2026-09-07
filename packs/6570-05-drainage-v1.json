@@ -13,7 +13,16 @@
       "maxSubcategoriesPerCategory": 5,
       "maxTasksPerSubcategory": 5
     },
-    "mandatoryUnits": ["102", "234", "235", "300", "303", "313", "502", "701"],
+    "mandatoryUnits": [
+      "102",
+      "234",
+      "235",
+      "300",
+      "303",
+      "313",
+      "502",
+      "701"
+    ],
     "selectedOptionalUnit": "837",
     "glh": 847,
     "tqt": 1470
@@ -21,7 +30,17 @@
   "route": {
     "id": "drainage",
     "optionalUnit": "837",
-    "activeUnits": ["102", "234", "235", "300", "303", "313", "502", "701", "837"],
+    "activeUnits": [
+      "102",
+      "234",
+      "235",
+      "300",
+      "303",
+      "313",
+      "502",
+      "701",
+      "837"
+    ],
     "parentAcCount": 240,
     "atomicTargetCount": 766,
     "taskTypeCount": 125,
@@ -31,25 +50,51 @@
     "234.7.3": {
       "type": "minimum-options",
       "required": 1,
-      "options": ["234.7.3.a", "234.7.3.b", "234.7.3.c", "234.7.3.d"],
+      "options": [
+        "234.7.3.a",
+        "234.7.3.b",
+        "234.7.3.c",
+        "234.7.3.d"
+      ],
       "statement": "Complete at least 1 of the 4 listed structures."
     },
     "313.7.3": {
       "type": "minimum-options",
       "required": 3,
-      "options": ["313.7.3.a", "313.7.3.b", "313.7.3.c", "313.7.3.d", "313.7.3.e", "313.7.3.f", "313.7.3.g"],
+      "options": [
+        "313.7.3.a",
+        "313.7.3.b",
+        "313.7.3.c",
+        "313.7.3.d",
+        "313.7.3.e",
+        "313.7.3.f",
+        "313.7.3.g"
+      ],
       "statement": "Complete at least 3 of the 7 listed architectural or decorative masonry features."
     },
     "701.7.3": {
       "type": "minimum-options",
       "required": 4,
-      "options": ["701.7.3.a", "701.7.3.b", "701.7.3.c", "701.7.3.d", "701.7.3.e", "701.7.3.f", "701.7.3.g"],
+      "options": [
+        "701.7.3.a",
+        "701.7.3.b",
+        "701.7.3.c",
+        "701.7.3.d",
+        "701.7.3.e",
+        "701.7.3.f",
+        "701.7.3.g"
+      ],
       "statement": "Complete at least 4 of the 7 listed setting-out lines."
     },
     "837.7.2": {
       "type": "minimum-options",
       "required": 2,
-      "options": ["837.7.2.a", "837.7.2.b", "837.7.2.c", "837.7.2.d"],
+      "options": [
+        "837.7.2.a",
+        "837.7.2.b",
+        "837.7.2.c",
+        "837.7.2.d"
+      ],
       "statement": "Complete at least 2 of the 4 listed drainage types."
     }
   },
